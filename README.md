@@ -11,4 +11,10 @@ npm i
 
 # compile manually
 node_modules/.bin/frida-compile -S -c frida/test_globals.frida.js -o /tmp/agent.js
+
+
+# run it on 0bba24e2f3ca859d1766cc298b1bcd588ad1984a device
+frida -D 0bba24e2f3ca859d1766cc298b1bcd588ad1984a "App Store" /tmp/agent.js
 ```
+
+Currently, compiler produces code with errors.
