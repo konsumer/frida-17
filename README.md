@@ -8,4 +8,7 @@ pip install frida-tools
 
 # node tooling
 npm i
+
+# compile manually
+node_modules/.bin/frida-compile -S -c frida/test_globals.frida.js -o /tmp/agent.js
 ```
