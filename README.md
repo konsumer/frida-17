@@ -17,4 +17,4 @@ node_modules/.bin/frida-compile -S -c frida/test_globals.frida.js -o /tmp/agent.
 frida -D 0bba24e2f3ca859d1766cc298b1bcd588ad1984a "App Store" /tmp/agent.js
 ```
 
-Currently, compiler produces code with errors.
+Currently, I'm on frida 17.0.5
