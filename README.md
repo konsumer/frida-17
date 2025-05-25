@@ -1,5 +1,7 @@
 This is tooling for testing with Frida on 17.x branch.
 
+I am testing with iOS, but Android is similar:
+
 ```sh
 # setup fresh 17.0.5 frida-tools
 python3 -m venv venv
@@ -15,6 +17,16 @@ npx frida-compile frida/test2.js -o /tmp/test2.js
 
 # use integrated compiler with old-style scripts
 ./runner2.js "App Store" frida/test1.js
+```
+
+You might also have to do 'AppStore', depending on iOS version.
+
+You should see output like this, telling you that Java & ObjC are defined, and if each is `available`:
+
+```
+test1
+ObjC object true
+Java object false
 ```
 
 Currently, I'm on frida 17.0.5
