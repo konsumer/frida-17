@@ -5,8 +5,8 @@
   "private": true,
   "dependencies": {
     "frida": "latest",
-    "frida-java-bridge": "^7.0.1",
-    "frida-objc-bridge": "^8.0.4"
+    "frida-java-bridge": "latest",
+    "frida-objc-bridge": "latest"
   },
   "devDependencies": {
     "@types/frida-gum": "latest",
