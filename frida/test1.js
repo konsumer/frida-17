@@ -1,2 +1,2 @@
 console.log('test1')
-console.log(ObjC)
+console.log('ObjC', typeof ObjC)
