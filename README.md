@@ -10,7 +10,7 @@ pip install frida==17.0.5 frida-tools==14.0.2
 frida -U  "App Store" -l frida/test1.js
 
 # compile & run using node-tools
-./node_modules/frida-compile/dist/cli.js frida/test2.js -o /tmp/test2.js
+npx frida-compile frida/test2.js -o /tmp/test2.js
 ./runner.js "App Store" /tmp/test2.js
 
 # use integrated compiler with old-style scripts
