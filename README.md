@@ -1,20 +1,20 @@
 This is tooling for testing with Frida on 17.x branch.
 
-```
-# python tooling
+```sh
+# setup fresh 17.0.5 frida-tools
 python3 -m venv venv
 source venv/bin/activate
-pip install frida-tools
+pip install frida==17.0.5 frida-tools==14.0.2
 
-# node tooling
-npm i
+# run it using old-style, with frida-tools
+frida -U  "App Store" -l frida/test1.js
 
-# compile manually
-node_modules/.bin/frida-compile -S -c frida/test_globals.frida.js -o /tmp/agent.js
+# compile & run using node-tools
+./node_modules/frida-compile/dist/cli.js frida/test2.js -o /tmp/test2.js
+./runner.js "App Store" /tmp/test2.js
 
-
-# run it on 0bba24e2f3ca859d1766cc298b1bcd588ad1984a device
-frida -D 0bba24e2f3ca859d1766cc298b1bcd588ad1984a "App Store" /tmp/agent.js
+# use integrated compiler with old-style scripts
+./runner2.js "App Store" frida/test1.js
 ```
 
 Currently, I'm on frida 17.0.5
