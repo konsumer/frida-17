@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+// this will bundle the script using esbuild
+
 import { readFile } from 'node:fs/promises'
 import { basename } from 'node:path'
 import frida from 'frida'
