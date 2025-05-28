@@ -18,7 +18,9 @@ const code = (
     bundle: true,
     entryPoints: [scriptFile],
     inject: ['esbuild-globals.js'],
-    format: 'esm'
+    format: 'esm',
+    minify: true,
+    sourcemap: true
   })
 )?.outputFiles[0].text
 
