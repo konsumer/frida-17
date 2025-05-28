@@ -22,9 +22,10 @@ const code = (
     inject: ['esbuild-globals.js'],
     format: 'esm',
     minify: true,
-    sourcemap: true
+    // sourcemap: 'inline',
+    treeShaking: true
   })
-)?.outputFiles[0].text
+)?.outputFiles?.pop()?.text
 
 const device = await frida.getUsbDevice()
 const session = await device.attach(processName)

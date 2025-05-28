@@ -7,7 +7,8 @@
     "esbuild": "^0.25.5",
     "frida": "latest",
     "frida-java-bridge": "latest",
-    "frida-objc-bridge": "latest"
+    "frida-objc-bridge": "latest",
+    "frida-swift-bridge": "^3.0.1"
   },
   "devDependencies": {
     "@types/frida-gum": "latest",

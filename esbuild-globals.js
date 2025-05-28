@@ -2,3 +2,4 @@
 
 export { default as ObjC } from 'frida-objc-bridge'
 export { default as Java } from 'frida-java-bridge'
+export { default as Swift } from 'frida-swift-bridge'
