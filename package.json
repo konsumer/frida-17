@@ -4,6 +4,7 @@
   "type": "module",
   "private": true,
   "dependencies": {
+    "esbuild": "^0.25.5",
     "frida": "latest",
     "frida-java-bridge": "latest",
     "frida-objc-bridge": "latest"
